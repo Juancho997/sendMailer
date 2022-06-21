@@ -1,7 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= document_title %></title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+  <title>
+    <%= document_title %>
+  </title>
+  <style>
+    h1 {
+      color: rgb(67, 67, 182);
+      margin: auto;
+      margin-bottom: 10px;
+
+    }
+
+    #container {
+      margin-right: 1000px;
+      border: 1px solid rgba(234, 217, 242, 0.89);
+      border-radius: 4px;
+      /* margin: auto; */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      flex-direction: column;
+
+
+    }
+
+    #email {
+      border-radius: 5px;
+      padding: 0.5em 0.2em 0.8em 0.5em;
+
+    }
+
+    #content {
+      border-radius: 5px;
+      padding: 0.5em 0.2em 0.8em 0.5em;
+
+    }
+
+    #button {
+      background-color: #4e4e4e;
+      color: rgba(234, 217, 242, 0.89);
+      margin-right: 10px;
+      margin: 2px;
+      margin-bottom: 10px;
+      width: auto;
+      height: auto;
+      border-radius: 5px;
+      outline: none;
+      transition-duration: 0.4s
+    }
+
+    #button:hover {
+      cursor: pointer;
+      color: rgba(234, 217, 242, 0.89);
+      background: rgb(67, 67, 182);
+    }
+  </style>
+</head>

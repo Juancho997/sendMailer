@@ -7,7 +7,9 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
-app.use(express.static('./public'))
+// app.use(express.static('./public'))
+app.use('/public', express.static('public'));
+
 
 app.use(morgan("dev"));
 app.use(express.json());
